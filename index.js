@@ -28,6 +28,10 @@ app.use("*", (req, res) => {
   res.status(404).end();
 });
 
-app.listen(port, () => {
+// app.listen(port, () => {
+//   console.log(`serveur Node écoutant sur le port ${port}`);
+// });
+
+app.listen(port, "0.0.0.0", () => {
   console.log(`serveur Node écoutant sur le port ${port}`);
 });
